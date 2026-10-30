@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="server-backupは、jumpejumpが個人で利用する暗号化バックアップ用アプリです。Google Driveへのアクセス目的とデータの取り扱いを説明します。">
+<title>server-backup — 個人用の暗号化バックアップ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="./">server-backup</a><nav aria-label="サイト内"><a href="privacy.html">プライバシー</a><a href="terms.html">利用条件</a></nav></header>
+<main>
+<p class="eyebrow">Personal backup · jumpejump</p>
+<h1>大切なファイルを、<br>暗号化して保管する。</h1>
+<p class="lead">server-backupは、運営者jumpejump自身のサーバーデータをGoogle Driveへ保存・復元するための個人用アプリです。</p>
+<p>バックアップ処理にはrestic、Google Driveとの通信にはrcloneを使用します。このウェブサイトはアプリの説明とポリシーを掲載するもので、ログインやファイルのアップロードは行いません。</p>
+<div class="facts"><div><strong>目的</strong>故障や誤操作に備えたファイルの保存と復元。</div><div><strong>利用者</strong>運営者本人のGoogleアカウント。</div><div><strong>保存方法</strong>サーバー上で暗号化したデータをGoogle Driveへ転送。</div><div><strong>アクセス権限</strong>このアプリが作成したGoogle Driveのファイルに限定。</div></div>
+<h2>Google Driveへのアクセスについて</h2>
+<p><code>https://www.googleapis.com/auth/drive.file</code>スコープを利用し、このアプリが作成したバックアップファイルの作成・読み取り・更新・削除を行います。GmailやGoogleフォトへのアクセスは要求しません。</p>
+<p class="note">このサイトにバックアップデータ、復号パスワード、OAuth認証情報は掲載していません。保存先のバックアップデータを公開する機能もありません。</p>
+<h2>データの取り扱いと連絡先</h2>
+<p>詳しい取り扱いは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。アプリに関するお問い合わせは<a href="https://github.com/jumpejump/server-backup/issues">GitHub Issues</a>へお願いします。認証情報やバックアップの内容は投稿しないでください。</p>
+</main>
+<footer>運営者：<a href="https://github.com/jumpejump">jumpejump</a> · server-backup</footer>
+</body>
+</html>

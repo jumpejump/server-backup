@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="server-backupにおけるGoogle Driveデータ、暗号化バックアップ、認証情報の取り扱い。">
+<title>プライバシーポリシー — server-backup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="./">server-backup</a><nav aria-label="サイト内"><a href="privacy.html" aria-current="page">プライバシー</a><a href="terms.html">利用条件</a></nav></header>
+<main>
+<p class="eyebrow">Data &amp; privacy</p>
+<h1>プライバシーポリシー</h1>
+<p>最終更新日：2026年10月30日</p>
+<p>jumpejump（以下「運営者」）は、個人用アプリserver-backupについて、以下のとおりデータを取り扱います。</p>
+<h2>1. 利用目的と対象</h2>
+<p>本アプリは、運営者本人のサーバーにあるファイルを、本人のGoogle Driveへバックアップし、必要に応じて復元するために利用します。第三者向けのバックアップサービスは提供していません。</p>
+<h2>2. Googleのデータへのアクセス</h2>
+<p>GoogleのOAuth認証により許可を得たうえで、<code>drive.file</code>スコープを使用します。本アプリが作成したGoogle Driveのファイルについて、バックアップの保存・復元・整合性確認・保存世代の整理に必要な範囲で、内容およびファイルID、ファイル名、サイズなどのメタデータにアクセスします。</p>
+<h2>3. 保存と保護</h2>
+<p>バックアップ対象のファイル内容と復元に必要なメタデータは、resticによってサーバー上で暗号化してからGoogle Driveへ送信します。Google Drive上では暗号化されたバックアップファイルと、そのサイズなどの保存管理情報が扱われます。</p>
+<p>OAuthの認証情報および復号用パスワードは、運営者が管理する環境でアクセス権を制限して保管します。これらはこの公開ウェブサイトには保存しません。復号用パスワードは、復旧に備えて運営者が別途安全な場所にも保管します。</p>
+<h2>4. 共有と利用の制限</h2>
+<p>Google Driveはバックアップ保存先として利用します。GoogleのAPIから取得したデータを販売したり、広告、第三者向けの分析、AIモデルの学習に使用したりすることはありません。</p>
+<p>Google APIから受領した情報の利用および他のアプリへの転送は、Limited Useの要件を含む<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。</p>
+<h2>5. 保存期間、削除、アクセスの取り消し</h2>
+<p>バックアップは運営者が設定した世代管理方針に従って保持・整理します。運営者はバックアップ処理を停止し、Google Drive上の保存データを削除できます。</p>
+<p>Googleアカウントの<a href="https://myaccount.google.com/connections">サードパーティとの接続</a>から本アプリへのアクセスを取り消すことができます。アクセスの取り消しだけでは、既にGoogle Driveへ保存したバックアップは削除されません。</p>
+<h2>6. このウェブサイトについて</h2>
+<p>このサイトには独自のアクセス解析、広告、入力フォーム、ログイン機能を設けていません。公開にはGitHub Pagesを利用し、ホスティング事業者がセキュリティなどのためアクセス情報を処理する場合があります。詳しくは<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する声明</a>をご覧ください。</p>
+<h2>7. お問い合わせと変更</h2>
+<p>運営者：<a href="https://github.com/jumpejump">jumpejump</a>。お問い合わせは<a href="https://github.com/jumpejump/server-backup/issues">GitHub Issues</a>へお願いします。秘密情報や個人データを公開の投稿へ含めないでください。本ポリシーを変更した場合は、このページと更新日を更新します。</p>
+</main>
+<footer><a href="./">ホームへ戻る</a> · server-backup</footer>
+</body>
+</html>
